@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  ColliCinema
+
+  Created by Eduardo Gutiérrez on 29/10/23.
+  
+*/
+
+"txt_user" = "User";
+"txt_pass" = "Password";
+"txt_login" = "Login";
+"txt_name" = "Name";
+"txt_lastname" = "Lastname";
+"txt_email" = "Email";
+"txt_confirm_pass" = "Confirm password";
+"txt_join" = "Join";
+"txt_create_account" = "Create account";
+"txt_recover_pass" = "Recover pass";
+"txt_recovery_title" = "Recovery";
+"txt_recovery_subtitle" = "Enter your email to send you a new password";
+"txt_acept" = "Acept";
+"txt_cancel" = "Cancel";
+"txt_registration_title" = "Create account";
+"txt_title_modal" = "UPS!";
+"txt_email_invalid" = "Email is not valid";

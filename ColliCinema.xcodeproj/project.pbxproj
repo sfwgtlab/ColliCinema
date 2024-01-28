@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A03F4AD72B4A5794004B97B4 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F4AD62B4A5794004B97B4 /* Validations.swift */; };
+		A03F4AD92B4CE6B3004B97B4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F4AD82B4CE6B3004B97B4 /* HomeViewModel.swift */; };
+		A03F4ADB2B4F843F004B97B4 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F4ADA2B4F843F004B97B4 /* Loading.swift */; };
+		A03F4ADD2B5384B2004B97B4 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F4ADC2B5384B2004B97B4 /* RegisterViewModel.swift */; };
+		A06F253C2AEB51270051211C /* ColliCinemaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06F253B2AEB51270051211C /* ColliCinemaApp.swift */; };
+		A06F25402AEB51280051211C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A06F253F2AEB51280051211C /* Assets.xcassets */; };
+		A06F25442AEB51280051211C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A06F25432AEB51280051211C /* Preview Assets.xcassets */; };
+		A06F254E2AEB51280051211C /* ColliCinemaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06F254D2AEB51280051211C /* ColliCinemaTests.swift */; };
+		A06F25582AEB51280051211C /* ColliCinemaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06F25572AEB51280051211C /* ColliCinemaUITests.swift */; };
+		A06F255A2AEB51280051211C /* ColliCinemaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06F25592AEB51280051211C /* ColliCinemaUITestsLaunchTests.swift */; };
+		A06F256A2AEB67EA0051211C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06F25692AEB67EA0051211C /* Login.swift */; };
+		A0BB8B8B2B65EFF800C632EF /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BB8B8A2B65EFF800C632EF /* RegisterService.swift */; };
+		A0C8B9C52AEBEC6C00A651F7 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8B9C42AEBEC6C00A651F7 /* Home.swift */; };
+		A0C8B9C72AEBEC9400A651F7 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8B9C62AEBEC9400A651F7 /* Payment.swift */; };
+		A0C8B9C92AEBEDBD00A651F7 /* CandyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8B9C82AEBEDBD00A651F7 /* CandyStore.swift */; };
+		A0C8B9CB2AEBEDF600A651F7 /* Listings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8B9CA2AEBEDF600A651F7 /* Listings.swift */; };
+		A0C8B9CD2AEBF1DD00A651F7 /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8B9CC2AEBF1DD00A651F7 /* Summary.swift */; };
+		A0C8B9CF2AEBF24D00A651F7 /* Synopsis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8B9CE2AEBF24D00A651F7 /* Synopsis.swift */; };
+		A0C8B9D12AEBF27100A651F7 /* Tickets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8B9D02AEBF27100A651F7 /* Tickets.swift */; };
+		A0C8B9D32AEBF37400A651F7 /* SelectSeats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C8B9D22AEBF37400A651F7 /* SelectSeats.swift */; };
+		A0C910092AECAB7E006780D4 /* RecoveryPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C910082AECAB7E006780D4 /* RecoveryPass.swift */; };
+		A0C9100B2AED3BC0006780D4 /* RegisterAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C9100A2AED3BC0006780D4 /* RegisterAccount.swift */; };
+		A0C9100E2AEDA1E6006780D4 /* ChangePass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C9100D2AEDA1E6006780D4 /* ChangePass.swift */; };
+		A0C910102AEDA1F5006780D4 /* MyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C9100F2AEDA1F5006780D4 /* MyProfile.swift */; };
+		A0C910192AEED0E7006780D4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0C9101B2AEED0E7006780D4 /* Localizable.strings */; };
+		A0CF1DA82AFB223800552403 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF1DA72AFB223800552403 /* User.swift */; };
+		A0CF1DAA2AFB2A8C00552403 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF1DA92AFB2A8C00552403 /* Constants.swift */; };
+		A0CF1DAC2AFB2D4100552403 /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF1DAB2AFB2D4100552403 /* GeneralResponse.swift */; };
+		A0CF1DAE2AFB2F7100552403 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF1DAD2AFB2F7100552403 /* LoginResponse.swift */; };
+		A0CF1DB02AFB30D400552403 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF1DAF2AFB30D400552403 /* LoginViewModel.swift */; };
+		A0CF1DB22AFB32C100552403 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF1DB12AFB32C100552403 /* LoginService.swift */; };
+		A0DF29E92AEF3A72009517BF /* bannerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF29E82AEF3A72009517BF /* bannerLogin.swift */; };
+		A0DF29EB2AEF565C009517BF /* GoBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF29EA2AEF565C009517BF /* GoBack.swift */; };
+		A0DF29ED2AEF59CE009517BF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF29EC2AEF59CE009517BF /* Alert.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A06F254A2AEB51280051211C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A06F25302AEB51260051211C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A06F25372AEB51270051211C;
+			remoteInfo = ColliCinema;
+		};
+		A06F25542AEB51280051211C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A06F25302AEB51260051211C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A06F25372AEB51270051211C;
+			remoteInfo = ColliCinema;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A03F4AD62B4A5794004B97B4 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
+		A03F4AD82B4CE6B3004B97B4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A03F4ADA2B4F843F004B97B4 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		A03F4ADC2B5384B2004B97B4 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		A06F25382AEB51270051211C /* ColliCinema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColliCinema.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A06F253B2AEB51270051211C /* ColliCinemaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColliCinemaApp.swift; sourceTree = "<group>"; };
+		A06F253F2AEB51280051211C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A06F25412AEB51280051211C /* ColliCinema.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColliCinema.entitlements; sourceTree = "<group>"; };
+		A06F25432AEB51280051211C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A06F25492AEB51280051211C /* ColliCinemaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColliCinemaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A06F254D2AEB51280051211C /* ColliCinemaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColliCinemaTests.swift; sourceTree = "<group>"; };
+		A06F25532AEB51280051211C /* ColliCinemaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColliCinemaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A06F25572AEB51280051211C /* ColliCinemaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColliCinemaUITests.swift; sourceTree = "<group>"; };
+		A06F25592AEB51280051211C /* ColliCinemaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColliCinemaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A06F25692AEB67EA0051211C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		A0BB8B8A2B65EFF800C632EF /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
+		A0C8B9C42AEBEC6C00A651F7 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		A0C8B9C62AEBEC9400A651F7 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		A0C8B9C82AEBEDBD00A651F7 /* CandyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyStore.swift; sourceTree = "<group>"; };
+		A0C8B9CA2AEBEDF600A651F7 /* Listings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listings.swift; sourceTree = "<group>"; };
+		A0C8B9CC2AEBF1DD00A651F7 /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
+		A0C8B9CE2AEBF24D00A651F7 /* Synopsis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synopsis.swift; sourceTree = "<group>"; };
+		A0C8B9D02AEBF27100A651F7 /* Tickets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tickets.swift; sourceTree = "<group>"; };
+		A0C8B9D22AEBF37400A651F7 /* SelectSeats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSeats.swift; sourceTree = "<group>"; };
+		A0C910082AECAB7E006780D4 /* RecoveryPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPass.swift; sourceTree = "<group>"; };
+		A0C9100A2AED3BC0006780D4 /* RegisterAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAccount.swift; sourceTree = "<group>"; };
+		A0C9100D2AEDA1E6006780D4 /* ChangePass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePass.swift; sourceTree = "<group>"; };
+		A0C9100F2AEDA1F5006780D4 /* MyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfile.swift; sourceTree = "<group>"; };
+		A0C9101A2AEED0E7006780D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A0C9101C2AEED1D6006780D4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A0CF1DA72AFB223800552403 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A0CF1DA92AFB2A8C00552403 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A0CF1DAB2AFB2D4100552403 /* GeneralResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
+		A0CF1DAD2AFB2F7100552403 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		A0CF1DAF2AFB30D400552403 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A0CF1DB12AFB32C100552403 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		A0DF29E82AEF3A72009517BF /* bannerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bannerLogin.swift; sourceTree = "<group>"; };
+		A0DF29EA2AEF565C009517BF /* GoBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoBack.swift; sourceTree = "<group>"; };
+		A0DF29EC2AEF59CE009517BF /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A06F25352AEB51270051211C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A06F25462AEB51280051211C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A06F25502AEB51280051211C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A06F252F2AEB51260051211C = {
+			isa = PBXGroup;
+			children = (
+				A06F253A2AEB51270051211C /* ColliCinema */,
+				A06F254C2AEB51280051211C /* ColliCinemaTests */,
+				A06F25562AEB51280051211C /* ColliCinemaUITests */,
+				A06F25392AEB51270051211C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A06F25392AEB51270051211C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A06F25382AEB51270051211C /* ColliCinema.app */,
+				A06F25492AEB51280051211C /* ColliCinemaTests.xctest */,
+				A06F25532AEB51280051211C /* ColliCinemaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A06F253A2AEB51270051211C /* ColliCinema */ = {
+			isa = PBXGroup;
+			children = (
+				A0DF29E52AEF3A33009517BF /* Components */,
+				A0C910112AEDA469006780D4 /* ViewModels */,
+				A0C9100C2AED3BCA006780D4 /* Services */,
+				A06F25682AEB64810051211C /* Utils */,
+				A06F25672AEB64760051211C /* Models */,
+				A06F25662AEB646A0051211C /* Views */,
+				A06F253B2AEB51270051211C /* ColliCinemaApp.swift */,
+				A06F253F2AEB51280051211C /* Assets.xcassets */,
+				A06F25412AEB51280051211C /* ColliCinema.entitlements */,
+				A06F25422AEB51280051211C /* Preview Content */,
+			);
+			path = ColliCinema;
+			sourceTree = "<group>";
+		};
+		A06F25422AEB51280051211C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A06F25432AEB51280051211C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A06F254C2AEB51280051211C /* ColliCinemaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A06F254D2AEB51280051211C /* ColliCinemaTests.swift */,
+			);
+			path = ColliCinemaTests;
+			sourceTree = "<group>";
+		};
+		A06F25562AEB51280051211C /* ColliCinemaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A06F25572AEB51280051211C /* ColliCinemaUITests.swift */,
+				A06F25592AEB51280051211C /* ColliCinemaUITestsLaunchTests.swift */,
+			);
+			path = ColliCinemaUITests;
+			sourceTree = "<group>";
+		};
+		A06F25662AEB646A0051211C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A06F25692AEB67EA0051211C /* Login.swift */,
+				A0C8B9C42AEBEC6C00A651F7 /* Home.swift */,
+				A0C8B9C62AEBEC9400A651F7 /* Payment.swift */,
+				A0C8B9C82AEBEDBD00A651F7 /* CandyStore.swift */,
+				A0C8B9CA2AEBEDF600A651F7 /* Listings.swift */,
+				A0C8B9CC2AEBF1DD00A651F7 /* Summary.swift */,
+				A0C8B9CE2AEBF24D00A651F7 /* Synopsis.swift */,
+				A0C8B9D02AEBF27100A651F7 /* Tickets.swift */,
+				A0C8B9D22AEBF37400A651F7 /* SelectSeats.swift */,
+				A0C910082AECAB7E006780D4 /* RecoveryPass.swift */,
+				A0C9100A2AED3BC0006780D4 /* RegisterAccount.swift */,
+				A0C9100D2AEDA1E6006780D4 /* ChangePass.swift */,
+				A0C9100F2AEDA1F5006780D4 /* MyProfile.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A06F25672AEB64760051211C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A0CF1DA72AFB223800552403 /* User.swift */,
+				A0CF1DAB2AFB2D4100552403 /* GeneralResponse.swift */,
+				A0CF1DAD2AFB2F7100552403 /* LoginResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A06F25682AEB64810051211C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A0C9101B2AEED0E7006780D4 /* Localizable.strings */,
+				A0DF29EA2AEF565C009517BF /* GoBack.swift */,
+				A0DF29EC2AEF59CE009517BF /* Alert.swift */,
+				A0CF1DA92AFB2A8C00552403 /* Constants.swift */,
+				A03F4AD62B4A5794004B97B4 /* Validations.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A0C9100C2AED3BCA006780D4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A0CF1DB12AFB32C100552403 /* LoginService.swift */,
+				A0BB8B8A2B65EFF800C632EF /* RegisterService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A0C910112AEDA469006780D4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A0CF1DAF2AFB30D400552403 /* LoginViewModel.swift */,
+				A03F4AD82B4CE6B3004B97B4 /* HomeViewModel.swift */,
+				A03F4ADC2B5384B2004B97B4 /* RegisterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A0DF29E52AEF3A33009517BF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A0DF29E82AEF3A72009517BF /* bannerLogin.swift */,
+				A03F4ADA2B4F843F004B97B4 /* Loading.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A06F25372AEB51270051211C /* ColliCinema */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A06F255D2AEB51280051211C /* Build configuration list for PBXNativeTarget "ColliCinema" */;
+			buildPhases = (
+				A06F25342AEB51270051211C /* Sources */,
+				A06F25352AEB51270051211C /* Frameworks */,
+				A06F25362AEB51270051211C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColliCinema;
+			productName = ColliCinema;
+			productReference = A06F25382AEB51270051211C /* ColliCinema.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A06F25482AEB51280051211C /* ColliCinemaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A06F25602AEB51280051211C /* Build configuration list for PBXNativeTarget "ColliCinemaTests" */;
+			buildPhases = (
+				A06F25452AEB51280051211C /* Sources */,
+				A06F25462AEB51280051211C /* Frameworks */,
+				A06F25472AEB51280051211C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A06F254B2AEB51280051211C /* PBXTargetDependency */,
+			);
+			name = ColliCinemaTests;
+			productName = ColliCinemaTests;
+			productReference = A06F25492AEB51280051211C /* ColliCinemaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A06F25522AEB51280051211C /* ColliCinemaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A06F25632AEB51280051211C /* Build configuration list for PBXNativeTarget "ColliCinemaUITests" */;
+			buildPhases = (
+				A06F254F2AEB51280051211C /* Sources */,
+				A06F25502AEB51280051211C /* Frameworks */,
+				A06F25512AEB51280051211C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A06F25552AEB51280051211C /* PBXTargetDependency */,
+			);
+			name = ColliCinemaUITests;
+			productName = ColliCinemaUITests;
+			productReference = A06F25532AEB51280051211C /* ColliCinemaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A06F25302AEB51260051211C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A06F25372AEB51270051211C = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					A06F25482AEB51280051211C = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = A06F25372AEB51270051211C;
+					};
+					A06F25522AEB51280051211C = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = A06F25372AEB51270051211C;
+					};
+				};
+			};
+			buildConfigurationList = A06F25332AEB51260051211C /* Build configuration list for PBXProject "ColliCinema" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = A06F252F2AEB51260051211C;
+			productRefGroup = A06F25392AEB51270051211C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A06F25372AEB51270051211C /* ColliCinema */,
+				A06F25482AEB51280051211C /* ColliCinemaTests */,
+				A06F25522AEB51280051211C /* ColliCinemaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A06F25362AEB51270051211C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06F25442AEB51280051211C /* Preview Assets.xcassets in Resources */,
+				A0C910192AEED0E7006780D4 /* Localizable.strings in Resources */,
+				A06F25402AEB51280051211C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A06F25472AEB51280051211C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A06F25512AEB51280051211C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A06F25342AEB51270051211C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0DF29ED2AEF59CE009517BF /* Alert.swift in Sources */,
+				A0C8B9D32AEBF37400A651F7 /* SelectSeats.swift in Sources */,
+				A03F4ADB2B4F843F004B97B4 /* Loading.swift in Sources */,
+				A0CF1DB02AFB30D400552403 /* LoginViewModel.swift in Sources */,
+				A03F4AD92B4CE6B3004B97B4 /* HomeViewModel.swift in Sources */,
+				A0C910102AEDA1F5006780D4 /* MyProfile.swift in Sources */,
+				A0C8B9CB2AEBEDF600A651F7 /* Listings.swift in Sources */,
+				A06F256A2AEB67EA0051211C /* Login.swift in Sources */,
+				A0C9100B2AED3BC0006780D4 /* RegisterAccount.swift in Sources */,
+				A0C9100E2AEDA1E6006780D4 /* ChangePass.swift in Sources */,
+				A0C8B9CF2AEBF24D00A651F7 /* Synopsis.swift in Sources */,
+				A0C8B9C92AEBEDBD00A651F7 /* CandyStore.swift in Sources */,
+				A03F4AD72B4A5794004B97B4 /* Validations.swift in Sources */,
+				A0CF1DAC2AFB2D4100552403 /* GeneralResponse.swift in Sources */,
+				A0DF29EB2AEF565C009517BF /* GoBack.swift in Sources */,
+				A0C8B9C52AEBEC6C00A651F7 /* Home.swift in Sources */,
+				A03F4ADD2B5384B2004B97B4 /* RegisterViewModel.swift in Sources */,
+				A0CF1DB22AFB32C100552403 /* LoginService.swift in Sources */,
+				A06F253C2AEB51270051211C /* ColliCinemaApp.swift in Sources */,
+				A0DF29E92AEF3A72009517BF /* bannerLogin.swift in Sources */,
+				A0C8B9CD2AEBF1DD00A651F7 /* Summary.swift in Sources */,
+				A0CF1DAA2AFB2A8C00552403 /* Constants.swift in Sources */,
+				A0C8B9C72AEBEC9400A651F7 /* Payment.swift in Sources */,
+				A0C8B9D12AEBF27100A651F7 /* Tickets.swift in Sources */,
+				A0C910092AECAB7E006780D4 /* RecoveryPass.swift in Sources */,
+				A0CF1DA82AFB223800552403 /* User.swift in Sources */,
+				A0BB8B8B2B65EFF800C632EF /* RegisterService.swift in Sources */,
+				A0CF1DAE2AFB2F7100552403 /* LoginResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A06F25452AEB51280051211C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06F254E2AEB51280051211C /* ColliCinemaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A06F254F2AEB51280051211C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06F25582AEB51280051211C /* ColliCinemaUITests.swift in Sources */,
+				A06F255A2AEB51280051211C /* ColliCinemaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A06F254B2AEB51280051211C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A06F25372AEB51270051211C /* ColliCinema */;
+			targetProxy = A06F254A2AEB51280051211C /* PBXContainerItemProxy */;
+		};
+		A06F25552AEB51280051211C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A06F25372AEB51270051211C /* ColliCinema */;
+			targetProxy = A06F25542AEB51280051211C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0C9101B2AEED0E7006780D4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0C9101A2AEED0E7006780D4 /* en */,
+				A0C9101C2AEED1D6006780D4 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A06F255B2AEB51280051211C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A06F255C2AEB51280051211C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A06F255E2AEB51280051211C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ColliCinema/ColliCinema.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ColliCinema/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtlab.ColliCinema;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A06F255F2AEB51280051211C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ColliCinema/ColliCinema.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ColliCinema/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtlab.ColliCinema;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A06F25612AEB51280051211C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtlab.ColliCinemaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColliCinema.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ColliCinema";
+			};
+			name = Debug;
+		};
+		A06F25622AEB51280051211C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtlab.ColliCinemaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColliCinema.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ColliCinema";
+			};
+			name = Release;
+		};
+		A06F25642AEB51280051211C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtlab.ColliCinemaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ColliCinema;
+			};
+			name = Debug;
+		};
+		A06F25652AEB51280051211C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtlab.ColliCinemaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ColliCinema;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A06F25332AEB51260051211C /* Build configuration list for PBXProject "ColliCinema" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A06F255B2AEB51280051211C /* Debug */,
+				A06F255C2AEB51280051211C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A06F255D2AEB51280051211C /* Build configuration list for PBXNativeTarget "ColliCinema" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A06F255E2AEB51280051211C /* Debug */,
+				A06F255F2AEB51280051211C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A06F25602AEB51280051211C /* Build configuration list for PBXNativeTarget "ColliCinemaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A06F25612AEB51280051211C /* Debug */,
+				A06F25622AEB51280051211C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A06F25632AEB51280051211C /* Build configuration list for PBXNativeTarget "ColliCinemaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A06F25642AEB51280051211C /* Debug */,
+				A06F25652AEB51280051211C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A06F25302AEB51260051211C /* Project object */;
+}
