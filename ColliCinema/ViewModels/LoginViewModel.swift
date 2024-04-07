@@ -25,12 +25,14 @@ class LoginViewModel: ObservableObject{
         loading = true
         LoginService.shared.login(email: email, pass: password) { result in
             DispatchQueue.main.async { [self] in
-                
+                loading = false
                 self.loginResponse = result
                 self.message = result.message!
-                print("valor")
-                print(result)
-                result.codigo == 200 ? (showAlert.toggle()) : (goToHome())
+                if(result.codigo == 200){
+                    showAlert = true
+                }else{
+                    goToHome()
+                }
             }
         }
         
@@ -39,7 +41,7 @@ class LoginViewModel: ObservableObject{
     
     func validateFields(){
         
-        if(email.isEmpty || password.isEmpty || password.count < 6 || !Validations().validateEmail(email: email)){
+        if(email.isEmpty || password.isEmpty || password.count < 6){
             disableButton = true
         }else{
             disableButton = false
@@ -48,7 +50,6 @@ class LoginViewModel: ObservableObject{
     
     
     func goToHome(){
-        loading = false
         gotoHome = true
     }
     

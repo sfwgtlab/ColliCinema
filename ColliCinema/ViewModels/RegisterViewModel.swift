@@ -17,21 +17,59 @@ class RegisterViewModel: ObservableObject{
     @Published var showPassword: Bool = false
     @Published var showConfirmPassword: Bool = false
     @Published var disableButton: Bool = true
-    
+    @Published var loading: Bool = false
+    @Published var showAlert: Bool = false
+    @Published var alertMessage: String = ""
+    @Published var generalResponse: GeneralResponse?
     
     func register(){
         
+        print("entro a register")
+        RegisterService.shared.registerUser(name: name, lastname: lastName, email: email, password: password){ result in
+            DispatchQueue.main.async {[self] in
+                loading = false
+                print("lo que responde result")
+                print(result)
+            }
+            
+        }
+      
+    }
+    
+    func validateUser(){
+        loading = true
+        
+        RegisterService.shared.validateMail(email: email) { result in
+            DispatchQueue.main.async { [self] in
+                
+                self.generalResponse = result
+                self.alertMessage = result.message
+                if(result.codigo == 100){
+                    loading = false
+                    showAlert.toggle()
+                }else{
+                    register()
+                }
+            }
+            
+        }
     }
     
     func validateFields() {
         
-        if(!Validations().validatePassword(pass: password)){
+        if (!Validations().validatePassword(pass: password) 
+            || !Validations().validateEmail(email: email)
+            || password != confirmPassword
+            || name.isEmpty
+            || lastName.isEmpty){
             disableButton = true
+            
         }else{
             disableButton = false
+            
         }
         
-    
     }
+    
     
 }

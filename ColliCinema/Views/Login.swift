@@ -13,9 +13,8 @@ struct Login: View {
     var body: some View {
        
         NavigationStack{
+            
             VStack{
-                
-                
                 bannerLogin(pad: -40)
                 VStack{
                     
@@ -79,9 +78,17 @@ struct Login: View {
                     .foregroundColor(.black)
                         
                     Spacer()
+                    if(loginVM.loading){
+                        VStack{
+                            ProgressView()
+                                .progressViewStyle(.circular)
+                                .scaleEffect(2)
+                        }
+                        
+                    }
                 }
                 .frame(width: 350, height: 350)
-                .background(Color.white)
+                .background(  loginVM.loading ? Color.white.opacity(0.25) : Color.white)
                 .cornerRadius(25)
                 .shadow(color: .black, radius:10 , x:5 , y: 5)
                 HStack{
@@ -129,16 +136,15 @@ struct Login: View {
                 }
                 .frame(width: 350, height: 20)
                 .padding(30)
+               
                 Spacer()
-                bannerLogin(pad: -100)
                 
-                    .fullScreenCover(isPresented: .constant(loginVM.loading), content: {
-                   
-                       ProgressView()
-                           .progressViewStyle(.circular)
-                           .scaleEffect(2)
-                })
+                bannerLogin(pad: -100)
+                    
+               
+                    
             }
+            .background( loginVM.loading ? Color.black.opacity(0.2): nil )
             .navigationDestination(isPresented: .constant(loginVM.gotoHome)){
                 Home()
             }
@@ -150,6 +156,8 @@ struct Login: View {
         .alert(isPresented: $loginVM.showAlert, content: {
             AlertView(message: loginVM.message).showAlert()
         })
+        
+       
     }
     
    

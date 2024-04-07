@@ -17,7 +17,7 @@ class Validations {
     }
     
     func validatePassword(pass: String) -> Bool{
-        let passRegEx = #"(?=^.{6,}$)(?=^.*[A-Z].*$)(?=^.*\d.*$).*"#
+        let passRegEx = #"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$"#
         let passPred =  NSPredicate(format:"SELF MATCHES %@", passRegEx)
         return passPred.evaluate(with: pass)
     }
