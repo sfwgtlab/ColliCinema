@@ -9,6 +9,7 @@ import Foundation
 
 
 struct GeneralResponse: Codable{
+    
     var message: String
     var codigo: Int
 }

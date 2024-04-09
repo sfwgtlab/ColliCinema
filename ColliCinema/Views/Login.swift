@@ -29,6 +29,7 @@ struct Login: View {
                             .onChange(of: loginVM.email){ oldValue, newValue in
                                 loginVM.validateFields()
                             }
+                            .textInputAutocapitalization(.never)
                         
                             
                     }
@@ -154,7 +155,7 @@ struct Login: View {
         }
         
         .alert(isPresented: $loginVM.showAlert, content: {
-            AlertView(message: loginVM.message).showAlert()
+            AlertView(message: loginVM.message, alert: loginVM.alert).showAlert()
         })
         
        

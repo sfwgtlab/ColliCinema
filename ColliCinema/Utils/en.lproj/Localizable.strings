@@ -21,5 +21,6 @@
 "txt_acept" = "Acept";
 "txt_cancel" = "Cancel";
 "txt_registration_title" = "Create account";
-"txt_title_modal" = "UPS!";
+"txt_title_modal_alert" = "UPS!";
+"txt_title_modal_success" = "SUCCES";
 "txt_email_invalid" = "Email is not valid";

@@ -20,6 +20,7 @@ class LoginViewModel: ObservableObject{
     @Published var homePath = NavigationPath()
     @Published var gotoHome = false
     @Published var loading = false
+    @Published var alert = false
     
     func login(){
         loading = true
@@ -30,6 +31,7 @@ class LoginViewModel: ObservableObject{
                 self.message = result.message!
                 if(result.codigo == 200){
                     showAlert = true
+                    alert = true
                 }else{
                     goToHome()
                 }

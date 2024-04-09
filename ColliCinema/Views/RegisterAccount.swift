@@ -74,6 +74,7 @@ struct RegisterAccount: View {
                                     .onChange(of: registerVM.email){ oldValue, newValue in
                                         registerVM.validateFields()
                                     }
+                                    .textInputAutocapitalization(.never)
                                 
                                     
                             }
@@ -186,7 +187,8 @@ struct RegisterAccount: View {
         .navigationBarBackButtonHidden()
         
         .alert(isPresented: $registerVM.showAlert, content: {
-            AlertView(message: registerVM.alertMessage).showAlert()
+            AlertView(message: registerVM.alertMessage, alert: registerVM.alert)
+                .showAlert()
         })
     }
 }

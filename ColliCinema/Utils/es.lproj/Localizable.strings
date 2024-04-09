@@ -20,6 +20,7 @@
 "txt_confirm_pass" = "Valida contraseña";
 "txt_join" = "Unete";
 "txt_registration_title" = "Crea tu cuenta";
-"txt_title_modal" = "UPS!";
+"txt_title_modal_alert" = "UPS!";
+"txt_title_modal_success" = "EXITO";
 "txt_email_invalid" = "Email no valido";
 

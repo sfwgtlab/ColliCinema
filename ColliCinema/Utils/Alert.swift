@@ -13,14 +13,16 @@ import SwiftUI
 class AlertView{
     
     var message: String
+    var alert: Bool
     
-    init(message: String) {
+    init(message: String, alert: Bool) {
         self.message = message
+        self.alert = alert
     }
     
     func showAlert() -> Alert{
         return Alert(
-            title: Text(LocalizedStringKey("txt_title_modal")),
+            title:  alert ? Text(LocalizedStringKey("txt_title_modal_alert")) : Text(LocalizedStringKey("txt_title_modal_success")),
             message: Text(message),
             dismissButton: .cancel(Text("OK"))
         )

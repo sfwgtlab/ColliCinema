@@ -20,6 +20,7 @@ class RegisterViewModel: ObservableObject{
     @Published var loading: Bool = false
     @Published var showAlert: Bool = false
     @Published var alertMessage: String = ""
+    @Published var alert: Bool = false
     @Published var generalResponse: GeneralResponse?
     
     func register(){
@@ -28,8 +29,12 @@ class RegisterViewModel: ObservableObject{
         RegisterService.shared.registerUser(name: name, lastname: lastName, email: email, password: password){ result in
             DispatchQueue.main.async {[self] in
                 loading = false
-                print("lo que responde result")
-                print(result)
+                self.generalResponse = result
+                self.alertMessage = result.message
+                showAlert.toggle()
+                if(result.codigo != 100){
+                    alert = true
+                }
             }
             
         }
@@ -38,6 +43,7 @@ class RegisterViewModel: ObservableObject{
     
     func validateUser(){
         loading = true
+        alert =  false
         
         RegisterService.shared.validateMail(email: email) { result in
             DispatchQueue.main.async { [self] in
@@ -47,6 +53,7 @@ class RegisterViewModel: ObservableObject{
                 if(result.codigo == 100){
                     loading = false
                     showAlert.toggle()
+                    alert = true
                 }else{
                     register()
                 }
