@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Login: View {
-    @State var pad: CGFloat = -40
     @StateObject var loginVM: LoginViewModel =  LoginViewModel()
     var body: some View {
        
