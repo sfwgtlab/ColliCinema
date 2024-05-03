@@ -45,7 +45,6 @@ struct dropdownMenu: View {
                                 Button(action: {
                                     optionPressed = false
                                     self.actionSelected(item)
-                                    print("lo que vale selected optionx2", self.selectedOption)
                                 }){
                                     Text(item)
                                         .frame(maxWidth: .infinity, alignment: .leading)
